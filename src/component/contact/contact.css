@@ -1,0 +1,129 @@
+#contact {
+    padding: 30px 10px 20px 10px;
+    text-align: center;
+    height: fit-content;
+    min-height: 700px;
+    background: var(--color-dark-green);
+}
+
+#contact h2 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-weight: 1000;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 60%;
+    place-items: center;
+    margin: 10px auto;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-option {
+    background: var(--color-beige);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.contact-option:hover {
+    color: var(--color-beige);
+    background: transparent;
+    border: 2px solid var(--color-beige);
+    transition: var(--transition);
+}
+
+.contact-option:hover a{
+    color: var(--color-lightgreen);
+}
+
+.contact-option h4 {
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.contact-option a {
+    color: var(--color-dark-green);
+    margin: 30px 0;
+}
+
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+form input, form textarea {
+    background: transparent;
+    border: 2px solid var(--color-beige);
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--color-white);
+    width: 500px;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: var(--color-beige);
+    font-family: 'Raleway', sans-serif;
+}
+
+form input {
+    height: 60px;
+}
+
+form textarea {
+    height: 200px;
+    resize: none;
+}
+
+.btn-contact {
+    border: 1px solid var(--color-beige);
+    width: 100px;
+}
+
+.btn-contact:hover {
+    border: 1px solid var(--color-beige);
+    color: var(--color-beige);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* media query */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .contact-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-options {
+        margin-bottom: 40px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-options {
+        margin-bottom: 40px;
+        width: 70%;
+    }
+
+
+    form input, form textarea{
+        width: 150%;
+    }
+}

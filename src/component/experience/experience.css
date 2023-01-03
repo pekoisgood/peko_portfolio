@@ -1,0 +1,87 @@
+#experience {
+    padding: 40px 30px 10px 30px;
+    text-align: center;
+    height: 100vh;
+    min-height: 700px;
+    background: var(--color-dark-green);
+}
+
+#experience h2 {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-weight: 900;
+}
+
+.skills-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    place-items: start;
+    width: 90%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.container-skills {
+    background: var(--color-beige);
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    height: 310px;
+}
+
+.container-skills:hover {
+    background: transparent;
+    transition: var(--transition);
+    color: var(--color-beige);
+    border: 2px solid var(--color-green);
+}
+
+.container-skills h3 {
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.container-skills > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-skills .skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    margin: 10px auto;
+}
+
+.container-skills .skill h4 {
+    padding-left: 10px;
+}
+
+/* media query for sm screen */
+@media (max-width: 767px) {
+    #experience {
+        height: fit-content;
+        width: 100vw;
+    }
+    
+    #experience h2 {
+        margin-bottom: 30px;
+    }
+
+    .skills-row {
+        grid-template-columns: 1fr;
+    }
+
+    .container-skills {
+        margin-bottom: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        align-items: center;
+        height: fit-content;
+    }
+
+}
