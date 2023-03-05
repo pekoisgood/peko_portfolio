@@ -1,5 +1,5 @@
 import React from 'react'
-import {BsFacebook, BsGithub, BsInstagram} from 'react-icons/bs';
+import {BsFacebook, BsGithub, BsInstagram, BsLinkedin} from 'react-icons/bs';
 import './footer.css'
 
 function footer() {
@@ -19,6 +19,7 @@ function footer() {
           <a href='https://www.facebook.com/profile.php?id=100002676016972'><BsFacebook /></a>
           <a href='https://github.com/pekoisgood'><BsGithub /></a>
           <a href='https://www.instagram.com/'><BsInstagram /></a>
+          <a href='https://www.linkedin.com/in/peko-chuang-40a9b9267/'><BsLinkedin /></a>
         </div>
 
         <div className='footer-copyright'>

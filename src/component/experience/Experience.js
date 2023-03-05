@@ -60,6 +60,11 @@ function experience() {
                   <h4>Node.js</h4>
                   <p>Basic</p>
                 </div>
+                <div className='skill'>
+                  <MdVerified />
+                  <h4>express</h4>
+                  <p>Basic</p>
+                </div>
             </div>
         </div>
       </div>

@@ -38,8 +38,16 @@ function about() {
             </ul>
           </div>
         </div>
-        <p>My name is Peko.</p>
       </div>
+      <p className='about-self-intro'>
+          Hi, this is Peko. 
+          Interested in coding and desire to be a software engineer.
+          Graduated at Chang Gung University at 2022.
+          Obtained certificate on Coursera course. Including Python for Everybody Specialization , Version Control, Python Data Structure, HTML and CSS in depth, Programming with JavaScript, and React Basics.
+          Having good communication skills, willing to work with people. Also being attentive and diligent. 
+          I was the vice director of Respiratory Therapy Students' Assoiciation.
+          Good at working with others through experience of internship in the hospital where team work is an essential skill to take good care of patients.
+      </p>
     </section>
   )
 }

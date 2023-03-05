@@ -3,6 +3,7 @@ import './portfolio.css';
 import IMG1 from '../../assets/film_blog.png';
 import IMG2 from '../../assets/password_generator.png';
 import IMG3 from '../../assets/yes_no_decider.png';
+import IMG4 from '../../assets/quizzical.png';
 
 const data = [
   {
@@ -26,7 +27,13 @@ const data = [
     github: "https://github.com/pekoisgood/yes-no-decider",
     demo: "https://pekoisgood.github.io/yes-no-decider/"
   },
-
+  {
+    id: 4,
+    image: IMG4,
+    title: "Quizzical",
+    github: "https://github.com/pekoisgood/quizzical",
+    demo: "https://pekoisgood.github.io/quizzical/"
+  }
 ];
 
 

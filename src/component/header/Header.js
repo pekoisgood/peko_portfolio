@@ -2,7 +2,7 @@ import React from 'react'
 import './header.css'
 import ME from '../../assets/peko.png';
 import CV from '../../assets/CV_Peko.pdf';
-import {BsFacebook, BsGithub, BsInstagram} from 'react-icons/bs';
+import {BsFacebook, BsGithub, BsInstagram, BsLinkedin} from 'react-icons/bs';
 
 function header() {
   return (
@@ -15,7 +15,7 @@ function header() {
           <div className='title'>
             <span>Hello, I'm</span>
             <h1>Peko Chuang</h1>
-            <span> A front end developer.</span>
+            <span> A junior frontend developer.</span>
           </div>
         </div>
         <div className='bottons'>
@@ -26,6 +26,7 @@ function header() {
           <a href='https://www.facebook.com/profile.php?id=100002676016972'><BsFacebook /></a>
           <a href='https://github.com/pekoisgood'><BsGithub /></a>
           <a href='https://www.instagram.com/'><BsInstagram /></a>
+          <a href='https://www.linkedin.com/in/peko-chuang-40a9b9267/'><BsLinkedin /></a>
         </div>
       </div>
     </header>

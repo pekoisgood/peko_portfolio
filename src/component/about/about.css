@@ -20,6 +20,7 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 }
 
 .about-img {
@@ -41,6 +42,7 @@
 
 .about-detail-container {
     display: flex;
+    padding-bottom: 50px;
 }
 
 .card {
@@ -69,8 +71,8 @@
     color: var(--color-dark-green);
 }
 
-.container-about p {
-    margin-top: 60px;
+.about-self-intro{
+    padding: 0 100px 20px 100px;
 }
 
 /* media query for md screen */
