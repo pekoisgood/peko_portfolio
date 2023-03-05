@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/peko_portfolio/static/css/main.c0348159.css",
-    "main.js": "/peko_portfolio/static/js/main.ddb426a2.js",
+    "main.css": "/peko_portfolio/static/css/main.753b1b3f.css",
+    "main.js": "/peko_portfolio/static/js/main.2b11bffb.js",
     "static/js/787.7460b8ad.chunk.js": "/peko_portfolio/static/js/787.7460b8ad.chunk.js",
     "static/media/peko.png": "/peko_portfolio/static/media/peko.3c3200354900809fcf66.png",
     "static/media/film_blog.png": "/peko_portfolio/static/media/film_blog.cbaf98a024b59ef2e046.png",
     "static/media/yes_no_decider.png": "/peko_portfolio/static/media/yes_no_decider.6988b5e5f457132bb5cb.png",
+    "static/media/quizzical.png": "/peko_portfolio/static/media/quizzical.97a9915f7bf7a3353d59.png",
     "static/media/peko.jpg": "/peko_portfolio/static/media/peko.b81e2ae05e0090f57053.jpg",
     "static/media/password_generator.png": "/peko_portfolio/static/media/password_generator.f803da50c8e18e3bba83.png",
     "static/media/CV_Peko.pdf": "/peko_portfolio/static/media/CV_Peko.c96704d328858ef38d82.pdf",
     "index.html": "/peko_portfolio/index.html",
-    "main.c0348159.css.map": "/peko_portfolio/static/css/main.c0348159.css.map",
-    "main.ddb426a2.js.map": "/peko_portfolio/static/js/main.ddb426a2.js.map",
+    "main.753b1b3f.css.map": "/peko_portfolio/static/css/main.753b1b3f.css.map",
+    "main.2b11bffb.js.map": "/peko_portfolio/static/js/main.2b11bffb.js.map",
     "787.7460b8ad.chunk.js.map": "/peko_portfolio/static/js/787.7460b8ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0348159.css",
-    "static/js/main.ddb426a2.js"
+    "static/css/main.753b1b3f.css",
+    "static/js/main.2b11bffb.js"
   ]
 }
