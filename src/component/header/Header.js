@@ -10,12 +10,13 @@ function header() {
       <div className='container-header'>
         <div className='content-container'>
           <div className='img-container'>
-            <img src={ME} width="300px"/>
+            <img src={ME} width="300px" alt="Peko"/>
           </div>
           <div className='title'>
             <span>Hello, I'm</span>
             <h1>Peko Chuang</h1>
-            <span> A junior frontend developer.</span>
+            <span> A junior frontend developer. Curious about coding and looking for an opportunity to work as a software developer.</span><br />
+            <span>"Stay Hungry, Stay Foolish." - <i>Steve Jobs</i></span>
           </div>
         </div>
         <div className='bottons'>
