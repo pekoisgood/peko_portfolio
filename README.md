@@ -1,11 +1,16 @@
 # Peko's Personal Website
 A website showcasing my side projects, social media links, and contact information.
 
+* [Link](#link)
+* [Tech](#tech)
+* [Demo](#demo)
+
 ## Link
-https://pekoisgood.github.io/peko_portfolio/
+<a href="https://pekoisgood.github.io/peko_portfolio/">Live Demo</a>
 
 ## Tech
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 
 Other libraries: EmailJS
 
