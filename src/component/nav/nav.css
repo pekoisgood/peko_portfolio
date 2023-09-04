@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 
-#nav-container .nav-item:hover .hide-text {
+.nav-item:hover .hide-text {
   display: inline;
 }
 
@@ -49,6 +49,19 @@
 
 @media (max-width: 768px) {
   #nav-container {
+    top: unset;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    flex-direction: row;
+  }
+
+  .nav-item:hover .hide-text {
     display: none;
+  }
+
+  .nav-item:hover {
+    width: 50px;
+    height: 50px;
   }
 }
