@@ -1,55 +1,80 @@
-import React from 'react';
-import './about.css';
-import ME2 from '../../assets/peko.jpg';
-import { IoMdSchool } from 'react-icons/io';
-import { GrCertificate, GrUserExpert } from 'react-icons/gr';
+import React, { useEffect } from "react";
+import "./about.css";
+import ME2 from "../../assets/peko.jpg";
+import { IoMdSchool } from "react-icons/io";
+import { GrCertificate, GrUserExpert } from "react-icons/gr";
+import { useElementOnScreen } from "../../hooks/useElementOnScreen";
 
-function about() {
+const aboutList = [
+  {
+    title: "Education",
+    icon: <IoMdSchool />,
+    li: ["Chung Gung University"],
+  },
+  {
+    title: "Certificate",
+    icon: <GrCertificate />,
+    li: ["TOEIC: 840 points", "Respiratory Therapist"],
+  },
+  {
+    title: "Experience",
+    icon: <GrUserExpert />,
+    li: [
+      `AppWorks School / Front-End Developer
+    2023.03 - 2023.08`,
+    ],
+  },
+];
+
+function About() {
+  const [containerRef, isVisible] = useElementOnScreen({
+    reappear: true,
+  });
+
+  const animationText = (animation) => `hide ${isVisible && animation}`;
+
   return (
-    <section id='about'>
-      <p>Get to know me</p>
-      <h2>ABOUT</h2>
-      <div className='container-about'>
-        <div className='about-img'>
-          <img src={ME2} width="300px" alt="Peko"/>
-        </div>
-        <div className='about-detail-container'>
-          <div className='card'>
-            <IoMdSchool />
-            <h3>Education</h3>
-            <ul>
-              <li>Chung Gung University</li>
-              <li>Zhong Shan Girl's High School</li>
-            </ul>
+    <div className="sticky">
+      <section id="about" className="section" ref={containerRef}>
+        <p className={animationText("appear")}>Get to know me</p>
+        <h2 className={animationText("appear")}>ABOUT</h2>
+        <div className="container-about">
+          <div className={`about-img ${animationText("appear_d1")}`}>
+            <img src={ME2} width="300px" alt="Peko" />
           </div>
-          <div className='card'>
-            <GrCertificate />
-            <h3>Certificate</h3>
-            <ul>
-              <li>Respiratory therapist</li>
-              <li>TOEIC: 840 points</li>
-            </ul>
-          </div>
-          <div className='card'>
-            <GrUserExpert />
-            <h3>Experience</h3>
-            <ul>
-              <li>6 months+ develop experience</li>
-            </ul>
+          <div className={`card-container ${animationText("appear_d1")}`}>
+            {aboutList.map((item, index) => {
+              return (
+                <div className={`card`} key={index}>
+                  {item.icon}
+                  <p className="card-title">{item.title}</p>
+                  <ul className="list">
+                    {item.li.map((li) => {
+                      return <li>{li}</li>;
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
           </div>
         </div>
-      </div>
-      <p className='about-self-intro'>
-          Hi, this is Peko. 
-          Interested in coding and desire to be a software engineer.
-          Graduated at Chang Gung University at 2022.
-          Obtained certificate on Coursera course. Including Python for Everybody Specialization , Version Control, HTML and CSS in depth, Programming with JavaScript, and React Basics.
-          Having good communication skills, willing to work with people. Also being attentive and diligent. 
-          I was the vice director of Respiratory Therapy Students' Assoiciation.
-          Good at working with others through experience of internship in the hospital where team work is an essential skill to take good care of patients.
-      </p>
-    </section>
-  )
+        <p className={`about-self-intro ${animationText("appear_d2")}`}>
+          Peko here, a passionate aspiring software engineer who graduated from
+          Chang Gung University in 2022. I've expanded my skill set through
+          Coursera courses, covering Python for Everybody Specialization,
+          Version Control, HTML and CSS in depth, Programming with JavaScript,
+          and React Basics. Equipped with strong communication skills, I thrive
+          in collaborative settings and am eager to work with others. My
+          experience as the vice director of the Respiratory Therapy Students'
+          Association has honed my essential teamwork skills, vital for patient
+          care during hospital internships. Additionally, I've dedicated 80
+          hours per week at the AppWorks School coding bootcamp, where I've
+          completed projects including an e-commerce website, collaborative
+          ventures, and personal portfolio websites.
+        </p>
+      </section>
+    </div>
+  );
 }
 
-export default about
+export default About;

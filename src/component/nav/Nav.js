@@ -1,21 +1,57 @@
-import React from 'react'
-import './nav.css'
-import { AiTwotoneHome, AiFillContacts } from 'react-icons/ai'
-import { BsFillPersonFill, BsHddNetworkFill } from 'react-icons/bs'
-import { BiDockLeft } from 'react-icons/bi'
+import React from "react";
+import "./nav.css";
+import { AiTwotoneHome, AiFillContacts } from "react-icons/ai";
+import { BsFillPersonFill, BsHddNetworkFill } from "react-icons/bs";
+import { BiDockLeft } from "react-icons/bi";
 
+const navList = [
+  {
+    icon: <AiTwotoneHome className="nav-icon" />,
+    text: "Home",
+    component: "Header",
+  },
 
+  {
+    icon: <BsFillPersonFill className="nav-icon" />,
+    text: "About Me",
+    component: "About",
+  },
+  {
+    icon: <BsHddNetworkFill className="nav-icon" />,
+    text: "Skill",
+    component: "Experience",
+  },
+  {
+    icon: <BiDockLeft className="nav-icon" />,
+    text: "Portfolio",
+    component: "Portfolio",
+  },
+  {
+    icon: <AiFillContacts className="nav-icon" />,
+    text: "Contact",
+    component: "Contact",
+  },
+];
 
-function nav() {
+function nav({ setActiveComponent }) {
   return (
-    <nav id='nav-container'>
-        <a className='active' href='#'><AiTwotoneHome className='nav-icon' /> <p className='hide-text'>Home</p></a>
-        <a href='#about'><BsFillPersonFill className='nav-icon' /> <p className='hide-text'>About Me</p></a>
-        <a href='#experience'><BsHddNetworkFill className='nav-icon' /> <p className='hide-text'>Experience</p></a>
-        <a href='#portfolio'><BiDockLeft className='nav-icon' /> <p className='hide-text'>Portfolio</p></a>
-        <a href='#contact'><AiFillContacts className='nav-icon' /> <p className='hide-text'>Contact</p></a>
+    <nav id="nav-container">
+      {navList.map((nav, index) => {
+        return (
+          <div
+            key={index}
+            className="nav-item"
+            onClick={() => {
+              setActiveComponent(nav.component);
+            }}
+          >
+            {nav.icon}
+            <p className="hide-text">{nav.text}</p>
+          </div>
+        );
+      })}
     </nav>
-  )
+  );
 }
 
-export default nav
+export default nav;
