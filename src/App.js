@@ -7,16 +7,16 @@ import Portfolio from "./component/portfolio/Portfolio";
 import Contact from "./component/contact/Contact";
 import { useState } from "react";
 
-const list = {
-  Header: <Header />,
-  About: <About />,
-  Experience: <Experience />,
-  Portfolio: <Portfolio />,
-  Contact: <Contact />,
-};
-
 function App() {
   const [activeComponent, setActiveComponent] = useState("Header");
+
+  const list = {
+    Header: <Header setActiveComponent={setActiveComponent} />,
+    About: <About />,
+    Experience: <Experience />,
+    Portfolio: <Portfolio />,
+    Contact: <Contact />,
+  };
 
   const selectedComponent = (component) => {
     return list[component];

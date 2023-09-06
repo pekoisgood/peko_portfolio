@@ -5,7 +5,7 @@ import CV from "../../assets/CV_Peko_Front-End_Developer.pdf";
 import { BsFacebook, BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { useElementOnScreen } from "../../hooks/useElementOnScreen";
 
-function Header() {
+function Header({ setActiveComponent }) {
   const [containerRef, isVisible] = useElementOnScreen({
     threashold: 0.5,
     reappear: true,
@@ -47,7 +47,7 @@ function Header() {
             <a className="btn" href={CV}>
               Download CV
             </a>
-            <a className="btn" href="#contact">
+            <a className="btn" onClick={() => setActiveComponent("Contact")}>
               Let's talk
             </a>
           </div>

@@ -47,6 +47,7 @@ body {
   color: var(--color-dark-green);
   border: 1px solid var(--color-dark-green);
   transition: var(--transition);
+  cursor: pointer;
 }
 
 h1 {

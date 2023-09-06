@@ -51,8 +51,8 @@ function Skill() {
       <section id="experience" className="section">
         <p className={animationText("appear")}>Meet My Proficiencies</p>
         <h2 className={animationText("appear")}>Professional Skills</h2>
-        <div className="skills-row">
-          <div className={`container-skills ${animationText("slide_d1")}`}>
+        <div className={`skills-row ${animationText("appear_d1")}`}>
+          <div className={`container-skills`}>
             <h3>Frontend Development</h3>
             <div className={`skills-list-container `}>
               {frontendSkills.map((skill, index) => {
@@ -72,7 +72,7 @@ function Skill() {
               })}
             </div>
           </div>
-          <div className={`container-skills ${animationText("slide_d1")}`}>
+          <div className={`container-skills`}>
             <h3>Backend Development</h3>
             <div className="skills-list-container">
               {backendSkills.map((skill, index) => {
