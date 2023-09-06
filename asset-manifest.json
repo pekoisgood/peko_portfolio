@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/peko_portfolio/static/css/main.8fdfcb2b.css",
-    "main.js": "/peko_portfolio/static/js/main.e2acfe46.js",
+    "main.css": "/peko_portfolio/static/css/main.42e45870.css",
+    "main.js": "/peko_portfolio/static/js/main.2318c4eb.js",
     "static/js/787.7460b8ad.chunk.js": "/peko_portfolio/static/js/787.7460b8ad.chunk.js",
     "static/media/CV_Peko_Front-End_Developer.pdf": "/peko_portfolio/static/media/CV_Peko_Front-End_Developer.2bbc2e1b2a8331369a81.pdf",
     "static/media/film_blog.png": "/peko_portfolio/static/media/film_blog.cbaf98a024b59ef2e046.png",
@@ -12,12 +12,12 @@
     "static/media/peko.jpg": "/peko_portfolio/static/media/peko.b81e2ae05e0090f57053.jpg",
     "static/media/password_generator.png": "/peko_portfolio/static/media/password_generator.f803da50c8e18e3bba83.png",
     "index.html": "/peko_portfolio/index.html",
-    "main.8fdfcb2b.css.map": "/peko_portfolio/static/css/main.8fdfcb2b.css.map",
-    "main.e2acfe46.js.map": "/peko_portfolio/static/js/main.e2acfe46.js.map",
+    "main.42e45870.css.map": "/peko_portfolio/static/css/main.42e45870.css.map",
+    "main.2318c4eb.js.map": "/peko_portfolio/static/js/main.2318c4eb.js.map",
     "787.7460b8ad.chunk.js.map": "/peko_portfolio/static/js/787.7460b8ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8fdfcb2b.css",
-    "static/js/main.e2acfe46.js"
+    "static/css/main.42e45870.css",
+    "static/js/main.2318c4eb.js"
   ]
 }
