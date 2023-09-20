@@ -62,7 +62,8 @@ form {
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  width: 90%;
+  width: 100%;
+  max-width: 600px;
 }
 
 form input,
@@ -73,7 +74,6 @@ form textarea {
   padding: 10px;
   color: var(--color-white);
   width: 100%;
-  max-width: 600px;
 }
 
 form input::placeholder,

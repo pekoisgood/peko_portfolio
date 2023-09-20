@@ -124,7 +124,7 @@
 @media (max-width: 991px) {
   #about {
     height: fit-content;
-    padding: 40px 0 0 0;
+    padding: 40px 0 100px 0;
   }
 
   #about h2 {
